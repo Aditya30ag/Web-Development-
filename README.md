@@ -1,2 +1,6 @@
 <h1>Web Development </h1>
-<hr>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+</ul>
