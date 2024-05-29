@@ -10,9 +10,13 @@ const msg=document.querySelector(".hello");
 const h=document.querySelector(".user");
 const j=document.querySelector(".comp");
 
+const div = document.querySelector(".div");
+const div1 = document.querySelector(".div1");
+
 const gencompchoice=()=>{
   const option=["button1","button2","button3"];
   const random=Math.floor(Math.random()*3);
+  div1.innerText="Comp Input-"+option[random];
   return option[random];
 }
 
@@ -53,12 +57,15 @@ const playgame=(a)=>{
 choice1.addEventListener("click", () => {
   const a=choice1.getAttribute("class");
   playgame(a);
+  div.innerText="User Input-"+a;
 });
 choice2.addEventListener("click", () => {
   const a=choice2.getAttribute("class");
   playgame(a);
+   div.innerText="User Input-"+a;
 });
 choice3.addEventListener("click", () => {
   const a=choice2.getAttribute("class");
+   div.innerText="User Input-"+a;
   playgame(a);
 });
